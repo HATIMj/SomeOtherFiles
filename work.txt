@@ -1,0 +1,90 @@
+more command usage/linux essentials
+1.  FILL APPLICATION DETAILS LL
+2.  UPLOAD PHOTO AND SIGNATURE
+3.  UPLOAD DOCUMENTS
+4.  FEE PAYMENT
+5.  VERIFY THE PAY STATUS
+6.  PRINT THE RECEIPT
+7.  LL SLOT BOOK
+
+bash scripting
+git push,add,commit,log,config,tag,branch,checkout
+gtVrDuiDfck831PqWsLEZy5gyDz1cltohttp://natas1.natas.labs.overthewire.gtVrDuiDfck831PqWsLEZy5gyDz1cltogtVrDuiDfck831PqWsLEZy5gyDz1clto
+ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi13
+Natas6:aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+NATaS1
+ctrl + U shows the page souce code
+
+NATAS7:7z3hEENjQtflzgnT29q7wAvMNfZdh0i9N
+
+NATAS8:DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
+NATAS9:W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+
+
+NATAS10:nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
+
+
+NATAS11:U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+
+
+MONERO key : 42raJ3ij29Hf6yuAYnawtL587RR9Yh3HQ7zrQFntjeGndW36DVZGX6r2G4UzVFHKvBDC4ai7itC4RK53KvmmvdD62WoVuvo
+
+
+
+
+
+
+
+NATAS1
+password was present in the source code of the page 
+
+
+NATAS2 
+We Cam Visit Others Directories from href links 
+For Ex- In https://jojo.om/files/img.jpg
+You Can Change Directory by Removing img.jpg From Above Link 
+                                  
+
+
+      
+NATAS3
+robots.txt file tells the search engines about which file should not be shown to the users
+
+
+
+
+NATAS4
+
+By changing referer header we can get access to a webpage which is denying it
+
+NATAS5
+By Changing the cookie from loggedin=0 to loggedin=1
+
+NATAS6
+by checking the php code 
+we came to know that its  module where secret was, is on includes/secret.inc 
+so we visit  its source code by changing source code of the original site by adding /includes/secret.inc
+
+NATAS7
+when we change page to home we see link address changes page with  change in "page=..." in its link 
+hence through the source code we came to know that the location of the password is in /etc/ file so we change it into 
+"page=/etc/......"
+
+NATAS8
+we decoded the base64 bin2hex strrev code as follows:
+in php compiler:
+<?
+echo base64_decode (strrev(hex2bin('.....')));
+>
+NATAS9
+In this we will find an interface which demand us to fill a name to get the secret which is password.
+But in source code we see no filtering of special symbols 
+so here we will use ; to add the line of code which will ultimately show us the PASSWORD
+;cat /etc/natas_webpass/natas10
+
+NATAS10
+
+in this only[;][&] are filtered.so by adding .*/etc/natas_pass/natas10# we get our password of this page.
